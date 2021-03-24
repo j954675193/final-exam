@@ -3,8 +3,8 @@ import {
    Navbar, Nav, 
  } from 'react-bootstrap';
 import {
-  BrowserRouter as Router,
-  // HashRouter as Router,
+  // BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -21,7 +21,7 @@ function App() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/request">Request Form</Nav.Link>
+            <Link to="/request">Request Form</Link>
             
           </Nav>
           
