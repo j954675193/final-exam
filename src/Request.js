@@ -45,7 +45,7 @@ export default function Request() {
 
         await moneyRef
             .add(preparedData)
-            .then(() => console.log("New record has been added."))
+            .then(() => window.alert("New record has been added!"))
             .catch((error) => {
                 console.error("Errror:", error)
                 alert(error)
